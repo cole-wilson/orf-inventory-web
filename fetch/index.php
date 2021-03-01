@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-$mysqli = new mysqli("localhost","pi","robots","inventory");
+$mysqli = new mysqli("localhost","pi","robots","replicator");
 // Check connection
 if ($mysqli -> connect_errno) {
   echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
@@ -9,7 +9,7 @@ if ($mysqli -> connect_errno) {
 }
 
 // Perform query
-if ($result = $mysqli -> query("SELECT * FROM parts")) {
+if ($result = $mysqli -> query("SELECT * FROM items")) {
   $res = array();
   while ($row = $result -> fetch_assoc()) {
     $res[] = $row;

@@ -51,20 +51,9 @@
 		<h2 class="i" align="center"><?php echo $_GET['i']; ?></h2>
 		<h2 class="e" align="center"><?php echo $_GET['e']; ?></h2>
 		<h1 align="center">Inventory Parts List</h1>
-		<div id="to"><table align="center" id="main"></table></div><hr>
-		<form action="add" method="GET">
-			<h2>Add an Item:</h2>
-			Barcode: <input required type="text" name="barcode" placeholder="M-38274-00" maxlength="20"><br>
-			Name: <input required type="text" name="name" placeholder="Cool Motor" maxlength="300"><br>
-			Supplier: <input required type="text" name="supplier" placeholder="Rev" maxlength="200"><br>
-			Part #: <input required type="text" name="part" placeholder="R928" maxlength="10"><br>
-			Cost: <input required type="number" name="cost" placeholder="$34" min="0"><br>
-			Quantity in Stock: <input required type="number" name="stock" placeholder="2" min="0"><br>
-			Quantity on Robot: <input required type="number" name="robot" placeholder="0" min="0"><br>
-			Quantity in Testing: <input required type="number" name="testing" placeholder="0" min="0"><br>
-			<label><input type="checkbox" name="print" checked required> Print Label</label>
-		<br><input type="submit" value="Add Item"></form>
-		<br><br>
+		<div id="to"><table align="center" id="main"></table></div>
+		<a href='/csv'>Download CSV file</a>
+		<hr>
 		<span align="center" id="updated"></span>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
