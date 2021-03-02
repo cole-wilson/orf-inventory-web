@@ -8,6 +8,8 @@
 			body {
 				margin: 0px;
 				/*text-align: center;*/
+				background: #111;
+				color: lightgray;
 			}
 			table {
 			  font-family: arial, sans-serif;
@@ -36,6 +38,7 @@
 			}
 			textarea {
 			  width: 100%;
+                          background: #eee;
 			}
 			span {
 			  width: 100vw;
@@ -50,8 +53,8 @@
   <body>
 		<h2 class="i" align="center"><?php echo $_GET['i']; ?></h2>
 		<h2 class="e" align="center"><?php echo $_GET['e']; ?></h2>
-		<h1 align="center">ORF Replicator</h1>
-		<div id="to"><table align="center" id="main"></table></div>
+		<h1 align="center"><img src="//www.orf4450.org/favicon.ico" />
+<br>ORF Replicator</h1><div id="to"><table align="center" id="main"></table></div>
 		<a href='/csv'>Download CSV file</a>
 		<hr>
 		<span align="center" id="updated"></span>
