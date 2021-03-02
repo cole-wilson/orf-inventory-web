@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Inventory Parts List</title>
+    <title>ORF Replicator</title>
 		<style>
 			body {
 				margin: 0px;
@@ -50,7 +50,7 @@
   <body>
 		<h2 class="i" align="center"><?php echo $_GET['i']; ?></h2>
 		<h2 class="e" align="center"><?php echo $_GET['e']; ?></h2>
-		<h1 align="center">Inventory Parts List</h1>
+		<h1 align="center">ORF Replicator</h1>
 		<div id="to"><table align="center" id="main"></table></div>
 		<a href='/csv'>Download CSV file</a>
 		<hr>
